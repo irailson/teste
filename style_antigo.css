@@ -1,0 +1,69 @@
+*{
+	list-style: none;
+	color: black;
+}
+.menu{
+	background: green;
+	text-align: center;
+	padding: 0px;
+    position: relative;
+}
+/* o menu tem um blur que eu criei (está com bug)*//*
+.menu ul:hover li{
+	-webkit-filter:blur(1px);
+	-webkit-transition: ease 1s;
+}
+.menu li{
+	font-size: 20pt;
+	padding: 30px 30px;
+	display: inline-block;
+}
+.menu a{
+	color:white;
+	text-decoration: none;
+}
+.menu ul:hover li:hover{
+	-webkit-filter: blur(0px);
+}*/
+/*o menu tem um blur e aumenta*/
+.menu ul{
+	width: 1300px;
+	margin: 0 auto;
+   
+}
+.menu li{
+    font-size: 50px;
+    display: inline-block;
+    background: green;
+}
+.menu li a{
+    white-space: nowrap;
+    color: white;
+    text-decoration: none;
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+    -moz-transform: scale(0.5); 
+    -ms-transform: scale(0.5); 
+    -o-transform: scale(0.5); 
+    -webkit-transform: scale(0.5); 
+    transform: scale(0.5); 
+    -webkit-transition: all 0.6s linear;
+    -moz-transition: all 0.6s linear;
+    -o-transition: all 0.6s linear;
+    -ms-transition: all 0.6s linear;
+    transition: all 0.6s linear;
+}
+.menu:hover li a{
+	color: transparent;
+    text-shadow: 0px 0px 15px #fff;
+}
+.menu li a:hover{
+    text-shadow: 0px 0px 1px #fff;
+    -moz-transform: scale(1); 
+    -ms-transform: scale(1); 
+    -o-transform: scale(1); 
+    -webkit-transform: scale(1); 
+    transform: scale(1); 
+}
